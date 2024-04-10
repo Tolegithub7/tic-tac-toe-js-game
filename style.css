@@ -65,3 +65,49 @@ button:hover {
     cursor: pointer;
     transform: translateY(-2px);
 } */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: #f2c14e;
+  --winning-blocks: #2d414b;
+}
+body {
+  color: var(--winning-blocks);
+  font-family: "finger paint", cursive;
+}
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 35px;
+}
+.container {
+  padding: 40px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #37505c;
+}
+#gameboard {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange);
+  font-size: 75px;
+  border-right: 2px solid;
+  border-bottom: 1px solid;
+}
