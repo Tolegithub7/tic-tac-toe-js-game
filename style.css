@@ -129,4 +129,5 @@ button {
 }
 button:hover {
   cursor: pointer;
+  transform: translateY(-2px);
 }
