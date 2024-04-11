@@ -127,3 +127,6 @@ button {
   box-shadow: 0 2px 8px violet;
   transition: 200ms transform;
 }
+button:hover {
+  cursor: pointer;
+}
