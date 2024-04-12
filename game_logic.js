@@ -1,20 +1,19 @@
 let playerText = document.getElementById("playerText");
 let restartBtn = document.getElementById("restartBtn");
 let boxes = Array.from(document.getElementsByClassName("box"));
-// let playerText = document.getElementById('playerText')
-// let restartBtn = document.getElementById('restartBtn')
-// let boxes = Array.from(document.getElementsByClassName('box'))
 
+let winnerIndicator = getComputedStyle(document.body).getPropertyValue(
+  "Violet"
+);
+const otext = "O";
+const xtext = "X";
+let currentPlayer = xtext;
+let spaces = Array(9).fill(null);
 // let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
 
-// const O_TEXT = "O"
-// const X_TEXT = "X"
-// let currentPlayer = X_TEXT
-// let spaces = Array(9).fill(null)
-
-// const startGame = () => {
-//     boxes.forEach(box => box.addEventListener('click', boxClicked))
-// }
+const startGame = () => {
+  boxes.forEach((box) => box.addEventListener("click", boxClicked));
+};
 
 // function boxClicked(e) {
 //     const id = e.target.id
